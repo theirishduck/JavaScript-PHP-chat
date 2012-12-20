@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title></title>
+  <meta equiv="content-type" content="text/html; charset=utf-8" />
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/ui.css" />
+  
+  <!-- JS -->
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/config.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/ui.js"></script>
+  <script type="text/javascript" src="js/client.js"></script>
+  <script type="text/javascript" src="js/controller.js"></script>
+</head >
+<body>
+  <div id="project-description">
+    <h1>Simple AJAX chat with multi room support</h1>
+    <p class="version">v.0.0.1</p>
+    <p>Easy to install and easy to extend basic PHP - JavaScript AJAX chat</p>
+    <h3>Installation:</h3>
+    <ul>
+      <li><a href="https://github.com/hccoder/JavaScript-PHP-chat">Download</a></li>
+      <li>Unrar the chat.rar</li>
+      <li>Copy the folder to you web app's folder</li>
+      <li>Change the database credentials in config.php</li>
+      <li>Change the s_addr variable in js/config.js to your web app's URL</li>
+      <li>Import db.sql into your database</li>
+    </ul>
+    <h3>Usage:</h3>
+    <ul>
+      <li>To create room log in to your database manager(like: phpMyAdmin) and insert a row into c_rooms table</li>
+    </ul>
+  </div><!-- #project-description -->
+  
+  <div id="chat-ui-rooms">
+    <div class="chat-ui-title">Rooms <input type="text" id="nick" value="your name..." /></div><!-- .chat-ui-title -->
+    <div id="rooms-list"></div><!-- #rooms-list -->
+  </div><!-- #chat-ui-rooms -->
+  
+  <div id="opened-rooms"></div><!-- #opened-rooms -->
+  
+</body>
+</html>
